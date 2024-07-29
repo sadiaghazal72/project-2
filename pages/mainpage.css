@@ -1,0 +1,205 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body,html{
+    font-family: sans-serif;
+}
+.logo{
+    width: 150px;
+    padding: 20px;
+}
+.logo img{
+    width: 100%;
+}
+.menuicon{
+    width: 40px;
+    display: none;
+}
+.menuicon img{
+    width: 100%;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+   gap: 20px; 
+   list-style: none;
+}
+.menu a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-right:40px; */
+    padding: 20px 60px;
+    font-size: 15px;
+}
+.menu a:hover{
+    color: red;
+}
+main{
+  display: flex; 
+  gap: 40px; 
+  justify-content: center;
+}
+.mainimage{
+    width: 60%;
+}
+.mainimage img{
+    width: 100%;
+    height: 250px;
+}
+.new{
+    width: 30%;
+    background-color: black;
+    color: antiquewhite;
+    height: 420px;
+    width: 300px;
+    padding: 25px 15px;
+    letter-spacing: 1px;
+}
+.new h1{
+    color: rgb(243, 156, 26);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.new p{
+    font-size: 12px;
+    line-height: 20px;
+}
+.new h4{
+    color: antiquewhite;
+}
+.new a h4:hover{
+    color: rgb(243, 156, 26);   
+}
+.new a{
+    text-decoration: none;
+}
+ .headingleft{
+    display: flex;
+    gap: 30px;
+    /* padding: 20px 20px; */
+    margin: 20px 20px;
+ }
+ .left{
+    width: 50%;
+ }
+ .left h1{
+    color: rgb(3, 25, 51);
+    font-size: 50px;
+    /* padding: 20px 20px; */
+ }
+ .right{
+    width: 50%;
+    padding: 10px 10px;
+ }
+ .headingleft p{
+    font-size: 15px;
+ }
+ .headingleft button{
+    all: unset;
+    padding: 10px 30px;
+    background-color: rgb(221, 78, 42);
+    color: aliceblue;
+    margin-top: 40px;
+    font-size: 15px;
+    cursor: pointer;
+ }
+ .button:hover{
+    background-color: black;
+ }
+ section{
+display: flex;
+gap: 20px;
+margin: 20px 20px;
+padding: 20px 45px;
+justify-content: center;
+align-items: center;
+ }
+ .img{
+    width: 30%;
+    display: flex;
+    gap: 10px;
+ }
+ .img a :hover{
+    color: red;
+ }
+ .img a{
+    text-decoration: none;
+    color: rgb(3, 25, 51);
+ }
+.head{
+    color: rgb(139, 138, 138);
+    font-size: 20px;
+}
+.head p{
+    font-size: 15px;
+}
+@media only screen and (max-width:500px){
+    .logo{
+        width: 150px;
+        padding: 15px;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .menu{
+        background-color: #000;
+        position: absolute;
+        width: 40%;
+        height: 100vh;
+        top: 0px;
+        left: 0px;
+        flex-direction: column;
+        padding: 20px;
+        align-items: flex-start;
+        display: none;
+    }
+    .menu li{
+        width: 100%;
+    }
+    .menu li :hover{
+        background-color: rgb(6, 6, 98);
+    }
+    nav{
+        justify-content: space-between;
+    }
+    .menuicon{
+        display: inline;
+    }
+    main{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .mainimage{
+        width: 95%;
+        flex-grow: 1;
+    }
+    .mainimage img{
+        width: 100%;
+    }
+    .headingleft{
+        flex-direction: column;
+        text-align: center;
+    }
+    .left{
+        width: 90%;
+    }
+    .right{
+        width: 90%;
+    }
+    .new{
+        width: 90%;
+    }
+    section{
+        flex-direction: column;
+    }
+    .img{
+        width: 95%;
+    }
+   
+}
